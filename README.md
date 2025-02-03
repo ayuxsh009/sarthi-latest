@@ -1,6 +1,5 @@
 <<<<<<< HEAD
-# saarthi---OUR second year pr project>
-# a team project --->
+# saarthi---
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -9,21 +8,29 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 A platform dedicated to educating and empowering rural children through engaging and innovative methods.  
 
-🌐 **Website Link**: [https://saarthiedu.netlify.app/](https://saarthiedu.netlify.app/)  
+🌐 **Website Link**: [https://saarthiedu.vercel.app/](https://saarthiedu.vercel.app/)  
 
 ---
 
 ## Screenshots  
 
 ### Front Page  
-![Front Page](image.png)  
-![Section View](image-1.png)  
+![Front Page](image-4.png)  
+![Section View](image-5.png)  
 ![Interactive Section](image-2.png)  
 
 ### About Page  
 ![About Page](image-3.png)  
 
+### Login Page
+![Login](image-6.png)
+### Signup Page
+![Signup](image-7.png)
+
+### DashBoard
+![Dashboard](image-8.png)
 ---
+
 
 ## 🚀 Getting Started  
 
