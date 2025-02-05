@@ -39,7 +39,7 @@ Follow these steps to set up and run the Saarthi project locally.
 ### Step 1: Clone the Repository  
 Clone the repository to your local machine:  
 ```bash
-git clone https://github.com/ayuxsh009/saarthi-nextjs.git
+git clone https://github.com/ayuxsh009/saarthi-latest.git
 ```  
 
 ### Step 2: Navigate to the Project Directory  
@@ -64,7 +64,7 @@ npm run dev
 ```  
 
 Once started, open your browser and navigate to:  
-**[http://localhost:5173](http://localhost:5173)**  
+**[http://localhost:3000](http://localhost:3000)**  
 
 ---
 
