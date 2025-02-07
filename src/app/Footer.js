@@ -92,10 +92,10 @@ const Footer = () => {
               <i className="fas fa-envelope mr-2"></i> support@saarthi.com
             </li>
             <li className="text-gray-400">
-              <i className="fas fa-phone-alt mr-2"></i> +1 (800) 123-4567
+              <i className="fas fa-phone-alt mr-2"></i> +91 (800) 123-4567
             </li>
             <li className="text-gray-400">
-              <i className="fas fa-map-marker-alt mr-2"></i> 123 Saarthi St., Fun City, USA
+              <i className="fas fa-map-marker-alt mr-2"></i> IIITDM Jabalpur Madhya Pradesh 
             </li>
           </ul>
         </div>
