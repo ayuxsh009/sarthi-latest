@@ -75,7 +75,7 @@ const Resources = () => {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               <ResourceCard
-                icon="./digital-library.png"
+                icon="./DigitalLib.png"
                 title="Digital Library"
                 description="Access a collection of textbooks, guides, and journals to support academic and skill-based learning."
               />
