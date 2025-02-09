@@ -6,14 +6,13 @@ import { useUser } from '@clerk/nextjs';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user } = useUser();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const { user } = useUser();
 
   return (
-    
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo with Click Event */}
@@ -33,6 +32,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="focus:outline-none text-gray-800 hover:scale-110 transition-transform"
+            aria-label="Toggle navigation menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +89,7 @@ const Header = () => {
         <Link
           href="/sign-in"
           className="hidden md:inline-block bg-blue-500 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-600 transition-transform transform hover:scale-110"
+          aria-label="Sign In"
         >
           Sign In
         </Link>
@@ -105,6 +106,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="absolute top-4 right-4 text-gray-800 focus:outline-none"
+            aria-label="Close mobile menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -123,27 +125,52 @@ const Header = () => {
           </button>
           <ul className="space-y-6 p-6 text-sm font-medium">
             <li>
-              <Link href="/About" className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105">
+              <Link
+                href="/About"
+                className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105"
+                onClick={toggleMenu}
+                aria-label="About Us"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="/Programs" className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105">
+              <Link
+                href="/Programs"
+                className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105"
+                onClick={toggleMenu}
+                aria-label="Programs"
+              >
                 Programs
               </Link>
             </li>
             <li>
-              <Link href="/Resources" className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105">
+              <Link
+                href="/Resources"
+                className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105"
+                onClick={toggleMenu}
+                aria-label="Resources"
+              >
                 Resources
               </Link>
             </li>
             <li>
-              <Link href="/Howitworks" className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105">
+              <Link
+                href="/Howitworks"
+                className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105"
+                onClick={toggleMenu}
+                aria-label="How it Works"
+              >
                 How it Works
               </Link>
             </li>
             <li>
-              <Link href="./" className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105">
+              <Link
+                href="./"
+                className="block hover:text-blue-500 transform transition-transform duration-200 hover:scale-105"
+                onClick={toggleMenu}
+                aria-label="Dashboard"
+              >
                 Dashboard
               </Link>
             </li>
