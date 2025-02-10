@@ -25,8 +25,7 @@ const Body = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative text-4xl md:text-5xl font-extrabold mb-6 z-10"
           >
-            Empowering Kids to{" "}
-            <span className="text-yellow-400">Learn and Thrive</span>
+            Empowering Kids to <span className="text-yellow-400">Learn and Thrive</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -34,21 +33,24 @@ const Body = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative text-lg md:text-xl mb-10 max-w-3xl mx-auto z-10"
           >
-            Transform education into an exciting journey, blending creativity
-            with engagement.
+            Transform education into an exciting journey, blending creativity with engagement.
           </motion.p>
           <div className="relative flex justify-center space-x-6 z-10">
+            <Link href="/sign-up" passHref>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="Get Started"
+                className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold transition hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+              >
+                Get Started
+              </motion.button>
+            </Link>
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition"
-            >
-              <Link href="/sign-up">Get Started</Link>
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="border-2 border-yellow-400 px-8 py-4 rounded-full font-semibold text-yellow-400 hover:bg-yellow-400 hover:text-blue-900 transition"
+              aria-label="Learn More"
+              className="border-2 border-yellow-400 px-8 py-4 rounded-full font-semibold text-yellow-400 transition hover:bg-yellow-400 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
             >
               Learn More
             </motion.button>
@@ -67,7 +69,7 @@ const Body = () => {
               <div className="relative w-96 h-96">
                 <Image
                   src="/circle.png"
-                  alt="Learning"
+                  alt="Decorative circle image representing learning"
                   className="rounded-full shadow-2xl"
                   layout="fill"
                   objectFit="cover"
@@ -123,7 +125,7 @@ const Body = () => {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };
@@ -133,9 +135,11 @@ const FeatureCard = ({ icon, title, description }) => (
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    className="flex items-center space-x-4 bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+    whileHover={{ scale: 1.02 }}
+    className="flex items-center space-x-4 bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+    tabIndex="0"
   >
-    <Image src={icon} alt="" width={64} height={64} />
+    <Image src={icon} alt={`${title} icon`} width={64} height={64} />
     <div>
       <h3 className="text-xl font-semibold">{title}</h3>
       <p className="text-gray-600">{description}</p>
@@ -148,7 +152,9 @@ const TestimonialCard = ({ content, author }) => (
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
-    className="bg-white shadow-lg rounded-xl p-8"
+    whileHover={{ scale: 1.02 }}
+    className="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+    tabIndex="0"
   >
     <p className="text-gray-700 italic mb-4">"{content}"</p>
     <h4 className="text-gray-900 font-bold">- {author}</h4>
