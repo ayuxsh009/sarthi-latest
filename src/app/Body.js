@@ -46,14 +46,6 @@ const Body = () => {
                 Get Started
               </motion.button>
             </Link>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="Learn More"
-              className="border-2 border-yellow-400 px-8 py-4 rounded-full font-semibold text-yellow-400 transition hover:bg-yellow-400 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
-            >
-              Learn More
-            </motion.button>
           </div>
         </section>
 
@@ -74,12 +66,6 @@ const Body = () => {
                   layout="fill"
                   objectFit="cover"
                 />
-                <div className="absolute top-0 left-0 bg-white shadow-lg rounded-full p-3 transform -translate-x-6 -translate-y-6">
-                  <Image src="/books.png" alt="Books" width={64} height={64} />
-                </div>
-                <div className="absolute bottom-0 right-0 bg-white shadow-lg rounded-full p-3 transform translate-x-6 translate-y-6">
-                  <Image src="/umb.png" alt="Umbrella" width={64} height={64} />
-                </div>
               </div>
             </motion.div>
             <div className="space-y-8">
@@ -102,24 +88,24 @@ const Body = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Educational Approach Section */}
         <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
           <div className="container mx-auto px-6 md:px-12">
             <h2 className="text-center text-3xl md:text-4xl font-extrabold mb-12">
-              What Parents Say
+              Our Educational Approach
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <TestimonialCard
-                content="Saarthi has made learning a joy for my kids. They love the activities!"
-                author="Jane Doe"
+              <ApproachCard
+                title="Innovative Learning"
+                content="We use interactive content, games, and visual storytelling to make education more engaging."
               />
-              <TestimonialCard
-                content="The interactive tools are amazing! My kids are always engaged."
-                author="John Smith"
+              <ApproachCard
+                title="Skill Development"
+                content="Beyond academics, we focus on cognitive skills, problem-solving, and creativity."
               />
-              <TestimonialCard
-                content="A fantastic platform for kids' education. Highly recommended!"
-                author="Emily Johnson"
+              <ApproachCard
+                title="Personalized Experience"
+                content="Each child learns differently, and our platform adapts to individual learning styles."
               />
             </div>
           </div>
@@ -147,7 +133,7 @@ const FeatureCard = ({ icon, title, description }) => (
   </motion.div>
 );
 
-const TestimonialCard = ({ content, author }) => (
+const ApproachCard = ({ title, content }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -156,8 +142,8 @@ const TestimonialCard = ({ content, author }) => (
     className="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
     tabIndex="0"
   >
-    <p className="text-gray-700 italic mb-4">"{content}"</p>
-    <h4 className="text-gray-900 font-bold">- {author}</h4>
+    <h3 className="text-gray-900 font-bold text-xl mb-4">{title}</h3>
+    <p className="text-gray-700">{content}</p>
   </motion.div>
 );
 

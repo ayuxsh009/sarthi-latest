@@ -23,9 +23,7 @@ const Resources = () => {
   return (
     <div>
       <Header/>
-      {/* <Header /> */}
       <main className="bg-white text-gray-900">
-        {/* Resources Hero Section */}
         <section className="relative text-center py-20 bg-gradient-to-tr from-purple-800 via-indigo-700 to-blue-600 text-white overflow-hidden">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -51,7 +49,6 @@ const Resources = () => {
           </motion.p>
         </section>
 
-        {/* Resources Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6 md:px-12 space-y-16">
             <motion.div
@@ -95,20 +92,19 @@ const Resources = () => {
                 description="Interactive quizzes to test understanding and reinforce learning outcomes."
               />
               <ResourceCard
-                icon="./language-tools.png"
-                title="Language Learning Tools"
-                description="Resources tailored for improving English proficiency and fostering communication skills."
+                icon="./mentor-guides.png"
+                title="Mentor Guides"
+                description="In-depth guides to help mentors structure sessions and achieve better outcomes."
               />
               <ResourceCard
-                icon="./resource-sharing.png"
-                title="Resource Sharing Hub"
-                description="A collaborative platform for students and educators to exchange study materials and ideas."
+                icon="./offline-tools.png"
+                title="Offline Tools"
+                description="Ensure continuity in learning with offline-compatible resources and materials."
               />
             </motion.div>
           </div>
         </section>
 
-        {/* Additional Resources Section */}
         <section className="py-20 bg-gray-100">
           <div className="container mx-auto px-6 md:px-12 space-y-16">
             <motion.div
@@ -137,24 +133,9 @@ const Resources = () => {
                 description="Personalized coaching to address individual learning challenges and boost confidence."
               />
               <ResourceCard
-                icon="./mentor-guides.png"
-                title="Mentor Guides"
-                description="In-depth guides to help mentors structure sessions and achieve better outcomes."
-              />
-              <ResourceCard
-                icon="./community-network.png"
-                title="Community Networking"
-                description="Connect with peers and mentors to create a strong learning ecosystem."
-              />
-              <ResourceCard
-                icon="./offline-tools.png"
-                title="Offline Tools"
-                description="Ensure continuity in learning with offline-compatible resources and materials."
-              />
-              <ResourceCard
-                icon="./visual-aids.png"
-                title="Visual Learning Aids"
-                description="Enhance comprehension with infographics, charts, and visualized content."
+                icon="./resource-sharing.png"
+                title="Resource Sharing Hub"
+                description="A collaborative platform for students and educators to exchange study materials and ideas."
               />
               <ResourceCard
                 icon="./support-platform.png"
