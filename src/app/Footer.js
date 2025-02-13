@@ -110,7 +110,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li className="text-gray-600">
               <i className="fas fa-envelope mr-2"></i>{" "}
-              <a href="mailto:support@saarthi.com">support@saarthi.com</a>
+              <a href="mailto:support@saarthi.com">saarthi.education.help@gmail.com</a>
             </li>
             <li className="text-gray-600">
               <i className="fas fa-phone-alt mr-2"></i> +91 (800) 123-4567
@@ -127,11 +127,11 @@ const Footer = () => {
       <div className="mt-12 border-t border-gray-300 pt-6 text-center">
         <p className="text-gray-500 mb-4">&copy; 2025 Saarthi. All rights reserved.</p>
         <div className="flex justify-center space-x-6">
-          <Link href="/privacy-policy" className="text-gray-600 hover:text-indigo-400" aria-label="Privacy Policy">
+          <Link href="/privacy" className="text-gray-600 hover:text-indigo-400" aria-label="Privacy Policy">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-service" className="text-gray-600 hover:text-indigo-400" aria-label="Terms of Service">
-            Terms of Service
+          <Link href="/contact" className="text-gray-600 hover:text-indigo-400" aria-label="Terms of Service">
+            Contact Us
           </Link>
         </div>
       </div>
