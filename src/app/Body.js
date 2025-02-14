@@ -11,7 +11,7 @@ const Body = () => {
     <>
       <Header />
       <main className="bg-white text-gray-900">
-        {/* Hero Section */}
+        {/* Hero Section ***/}
         <section className="relative text-center py-20 bg-gradient-to-tr from-gray-900 via-blue-700 to-purple-900 text-white overflow-hidden">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
