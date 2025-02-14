@@ -101,7 +101,7 @@ const Dashboard = () => {
               />
             </div>
             <h1 className="text-xl font-semibold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Saarthi Learning Platform
+              Saarthi
             </h1>
           </div>
 
