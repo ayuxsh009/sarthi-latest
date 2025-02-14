@@ -132,7 +132,6 @@ const FeatureCard = ({ icon, title, description }) => (
     </div>
   </motion.div>
 );
-
 const ApproachCard = ({ title, content }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.95 }}
